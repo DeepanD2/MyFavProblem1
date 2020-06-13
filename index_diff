@@ -1,0 +1,20 @@
+Given a number N and array of N integers, print the difference between the indices of smallest and largest number(if there are multiple occurances, consider the first occurance).
+Input Size : |N| <= 1000000
+Sample Testcase :
+INPUT
+5
+3 5 4 4 7
+OUTPUT
+4
+
+
+
+
+a=int(input())
+b=list(map(int,input().split()))
+s=min(b)
+d=b.index(s)
+f=max(b)
+h=b.index(f)
+l=h-d
+print(l)
