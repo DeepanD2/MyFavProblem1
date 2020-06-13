@@ -1,0 +1,20 @@
+Roman Reigns want to identify the repeated letters in two given strings and capitalize it.Help him to achieve it.
+Sample Testcase :
+INPUT
+computer program
+OUTPUT
+cOMPuteR PROgRaM
+
+
+
+a=str(input())
+b=""
+for i in range(0,len(a)):
+  for j in range(i+1,len(a)):
+    if(a[i]==a[j]):
+      x=a[i].upper()
+      y=a[j].upper()
+      a=a.replace(a[i],x)
+      a=a.replace(a[j],y)
+      
+print(a)
