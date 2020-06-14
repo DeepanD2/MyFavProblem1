@@ -18,3 +18,25 @@ for i in range(0,len(a)):
       a=a.replace(a[j],y)
       
 print(a)
+
+
+
+Given a string and a number K, change every kth character to uppercase from beginning in string.
+Sample Testcase :
+INPUT
+string 2
+OUTPUT
+sTrInG
+
+
+
+
+
+a,b=input().split()
+a=str(a)
+b=int(b)
+f=b-1
+for i in range(f,len(a),b):
+  x=a[i].upper()
+  a=a.replace(a[i],x)
+print(a)
