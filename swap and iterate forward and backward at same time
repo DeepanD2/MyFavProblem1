@@ -1,0 +1,11 @@
+a=list(map(int,input().split()))
+i=0
+j=len(a)-1
+d=len(a)/2
+d=int(d)
+while(i<=len(a)-1 and j>=0 ):
+    if(i<d):
+        a[i],a[j]=a[j],a[i]
+    i=i+1 
+    j=j-1 
+print(a)
